@@ -1,0 +1,108 @@
+@use './partials/global' as *;
+
+*::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font: 100% $base-font;
+}
+
+.header {
+    background-color: $background-color;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    padding: .625rem 0 .625rem 0;
+    @include flex(row, space-between, center);
+   
+    &__title {
+        text-decoration: none;
+        color: $logo-color; 
+        margin: 0 0 0 6.25rem;
+    }       
+}
+.nav-bar {
+    margin: 0 6.25rem 0 0;
+
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+    &__item {
+        padding: .625rem;
+
+        &--decorate {
+            text-decoration: none;
+            color: $nav-link-color;
+            font-weight: 500;
+        }
+    }
+}
+.hawaii-underline {
+    @include underline(.3125rem solid $orange, .625rem 0 .625rem 0, 0 .625rem 0 .625rem);
+}
+.iceland-underline {
+    @include underline(.3125rem solid $orange, .625rem 0 .625rem 0, 0 .625rem 0 .625rem);
+}
+.greece-underline {
+    @include underline(.3125rem solid $orange, .625rem 0 .625rem 0, 0 .625rem 0 .625rem);
+}
+
+/* Footer Section */
+
+.footer {
+    width: 100vw;
+    background-color: $footer-background-color;
+    @include flex(row, center, center);
+    vertical-align: top;   
+}
+.footer-card {
+    &__title {
+        margin: 2.5rem 0 1.875rem 0;
+        color: $footer-title-text-color;
+    }
+    &__subtitle {
+        font-size: $h5-font-size;
+        color: $orange;
+        font-weight: 300;
+    }
+    &__text {
+        margin: .625rem 0 2.5rem 0;
+        font-size: $h4-font-size;
+        font-weight: 300;
+        color: $footer-title-text-color;
+    }
+    &__hours-card {
+        margin: 0 6.25rem 0 6.25rem;
+    }
+    &__sub-container {
+        display: flex;
+    }
+    &__saturday-box {
+        margin: 0 2.5rem 0 2.5rem;
+    }
+    &__social-card {
+        height: 10.7775rem;
+    }
+    &__social-title {
+        margin-bottom: 2.888875rem;
+    }
+}
+.instagram-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.facebook-icon {
+    width: .625rem;
+    height: 1.25rem;
+    margin: 0 1.25rem 0 1.25rem;
+}
+.twitter-icon {
+    width: 1.25rem;    
+}

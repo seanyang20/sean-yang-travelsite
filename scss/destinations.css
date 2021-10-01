@@ -1,0 +1,122 @@
+*::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font: 100% Verdana;
+}
+
+.header {
+  background-color: #FFFFFF;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  padding: 0.625rem 0 0.625rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  text-decoration: none;
+  color: #335576;
+  margin: 0 0 0 6.25rem;
+}
+
+.nav-bar {
+  margin: 0 6.25rem 0 0;
+}
+.nav-bar__list {
+  display: flex;
+  list-style: none;
+}
+.nav-bar__item {
+  padding: 0.625rem;
+}
+.nav-bar__item--decorate {
+  text-decoration: none;
+  color: #393939;
+  font-weight: 500;
+}
+
+.hawaii-underline {
+  border-bottom: 0.3125rem solid #DB7A4E;
+  padding: 0.625rem 0 0.625rem 0;
+  margin: 0 0.625rem 0 0.625rem;
+}
+
+.iceland-underline {
+  border-bottom: 0.3125rem solid #DB7A4E;
+  padding: 0.625rem 0 0.625rem 0;
+  margin: 0 0.625rem 0 0.625rem;
+}
+
+.greece-underline {
+  border-bottom: 0.3125rem solid #DB7A4E;
+  padding: 0.625rem 0 0.625rem 0;
+  margin: 0 0.625rem 0 0.625rem;
+}
+
+/* Footer Section */
+.footer {
+  width: 100vw;
+  background-color: #FEFAF5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+}
+
+.footer-card__title {
+  margin: 2.5rem 0 1.875rem 0;
+  color: #335576;
+}
+.footer-card__subtitle {
+  font-size: 0.53125rem;
+  color: #DB7A4E;
+  font-weight: 300;
+}
+.footer-card__text {
+  margin: 0.625rem 0 2.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #335576;
+}
+.footer-card__hours-card {
+  margin: 0 6.25rem 0 6.25rem;
+}
+.footer-card__sub-container {
+  display: flex;
+}
+.footer-card__saturday-box {
+  margin: 0 2.5rem 0 2.5rem;
+}
+.footer-card__social-card {
+  height: 10.7775rem;
+}
+.footer-card__social-title {
+  margin-bottom: 2.888875rem;
+}
+
+.instagram-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.facebook-icon {
+  width: 0.625rem;
+  height: 1.25rem;
+  margin: 0 1.25rem 0 1.25rem;
+}
+
+.twitter-icon {
+  width: 1.25rem;
+}/*# sourceMappingURL=destinations.css.map */
