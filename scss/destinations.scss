@@ -54,6 +54,78 @@ body {
     @include underline(.3125rem solid $orange, .625rem 0 .625rem 0, 0 .625rem 0 .625rem);
 }
 
+/* Body Section */
+
+.container {
+   
+    &-hawaii {
+        @include background-img(url("../assets/Images/hawaii.jpg"));
+        max-height: 15.625rem;
+    }
+    &-iceland {
+        @include background-img(url("../assets/Images/iceland.jpg"));
+    }
+    &-greece {
+        @include background-img(url("../assets/Images/greece.jpg"));
+    }
+    
+    &__title-box {
+        position: relative;
+        width: 100vw;
+        height: 250px;
+      
+        &-text {
+            position: absolute;
+            color: $background-color;
+            top: 8.125rem;
+            left: 7.5rem;
+            font-size: 70px; 
+        }     
+    }
+    &__title-iceland {
+        
+    }
+    &__title-greece {
+        
+    }
+}
+.card-container {
+    width: 100vw;
+    @include flex(row, center, center);
+    margin: 1.5625rem 0 0 0;
+}
+.card {
+    border-radius: .3125rem;
+    border: .0625rem solid rgba(0, 0, 0, 0.20);
+    box-shadow: 0 .25rem .25rem 0 rgba(0, 0, 0, 0.20);
+    min-width: 17.5rem;
+    max-width: 17.5rem;
+    min-height: 24.375rem;
+    max-height: 24.375rem;
+    background-color: $background-color;
+    margin: 0 1.25rem 0 1.25rem;
+
+    &__title {
+        text-align: center;
+        border-bottom: .1875rem solid black;
+        margin: .9375rem .9375rem 1.875rem .9375rem;
+        font-weight: 800;
+        font-size: 1rem;
+        }
+
+    &__itinerary {
+        text-align: center;
+        margin: .9375rem .9375rem .9375rem .9375rem;
+        padding: .9375rem 0 .9375rem 0;
+        background-color: $footer-background-color;
+        font-weight: 300;
+        font-size: .9375rem;
+    }    
+    
+}
+
+
+
 /* Footer Section */
 
 .footer {
