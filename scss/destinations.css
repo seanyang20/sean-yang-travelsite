@@ -35,6 +35,9 @@ body {
   color: #335576;
   margin: 0 0 0 6.25rem;
 }
+.header__title--decorate {
+  font-size: 1.125rem;
+}
 
 .nav-bar {
   margin: 0 6.25rem 0 0;
@@ -50,22 +53,23 @@ body {
   text-decoration: none;
   color: #393939;
   font-weight: 500;
+  font-size: 13px;
 }
 
 .hawaii-underline {
-  border-bottom: 0.3125rem solid #DB7A4E;
+  border-bottom: 0.1875rem solid #DB7A4E;
   padding: 0.625rem 0 0.625rem 0;
   margin: 0 0.625rem 0 0.625rem;
 }
 
 .iceland-underline {
-  border-bottom: 0.3125rem solid #DB7A4E;
+  border-bottom: 0.1875rem solid #DB7A4E;
   padding: 0.625rem 0 0.625rem 0;
   margin: 0 0.625rem 0 0.625rem;
 }
 
 .greece-underline {
-  border-bottom: 0.3125rem solid #DB7A4E;
+  border-bottom: 0.1875rem solid #DB7A4E;
   padding: 0.625rem 0 0.625rem 0;
   margin: 0 0.625rem 0 0.625rem;
 }
@@ -107,9 +111,9 @@ body {
 .container__title-box-text {
   position: absolute;
   color: #FFFFFF;
-  top: 8.125rem;
+  top: 6.875rem;
   left: 6.25rem;
-  font-size: 70px;
+  font-size: 65px;
 }
 .card-container {
   max-width: 80rem;
@@ -117,17 +121,15 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 1.5625rem 0 0 0;
+  margin: -0.625rem 0 0 0;
 }
 
 .card {
   border-radius: 0.3125rem;
-  border: 0.0625rem solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.2);
-  min-width: 17.5rem;
-  max-width: 17.5rem;
-  min-height: 24.375rem;
-  max-height: 24.375rem;
+  min-width: 15.625rem;
+  max-width: 15.625rem;
+  min-height: 21.875rem;
+  max-height: 23.125rem;
   background-color: #FFFFFF;
   margin: 0 1.25rem 0 1.25rem;
 }
@@ -166,15 +168,16 @@ body {
 .footer-card__title {
   margin: 2.5rem 0 1.875rem 0;
   color: #335576;
+  font-size: 20px;
 }
 .footer-card__subtitle {
-  font-size: 0.53125rem;
+  font-size: 8.5px;
   color: #DB7A4E;
   font-weight: 300;
 }
 .footer-card__text {
   margin: 0.625rem 0 2.5rem 0;
-  font-size: 0.875rem;
+  font-size: 13px;
   font-weight: 300;
   color: #335576;
 }
@@ -195,16 +198,16 @@ body {
 }
 
 .instagram-icon {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.375rem;
+  height: 1.375rem;
 }
 
 .facebook-icon {
-  width: 0.625rem;
-  height: 1.25rem;
+  width: 0.75rem;
+  height: 1.375rem;
   margin: 0 1.25rem 0 1.25rem;
 }
 
 .twitter-icon {
-  width: 1.25rem;
+  width: 1.5625rem;
 }/*# sourceMappingURL=destinations.css.map */

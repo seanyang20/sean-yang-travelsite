@@ -1,12 +1,11 @@
-$background-color: #FFFFFF;
-$logo-color: #335576;
-$nav-link-color: #393939;
-$footer-background-color: #FEFAF5;
-$footer-title-text-color: #335576;
+$white: #FFFFFF;
+$blue: #335576;
+$graphite: #393939;
+$beige: #FEFAF5;
 $orange: #DB7A4E;
 $base-font: Verdana;
-$h5-font-size: .53125rem;
-$h4-font-size: .875rem;
+$h5-font-size: 8.5px;
+$h4-font-size: 13px;
 
 @mixin flex($direction, $justify, $align) {
     display: flex;
@@ -15,9 +14,9 @@ $h4-font-size: .875rem;
     align-items: $align;
   }
 @mixin underline($border-bottom, $padding, $margin) {
-    border-bottom: .3125rem solid $orange;
-    padding: .625rem 0 .625rem 0;
-    margin: 0 .625rem 0 .625rem;
+    border-bottom: $border-bottom;
+    padding: $padding;
+    margin: $margin;
 }
 @mixin background-img($img-source) {
     background-image: $img-source;
