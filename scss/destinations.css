@@ -55,6 +55,11 @@ body {
   font-weight: 500;
   font-size: 13px;
 }
+.nav-bar__item--decorate:hover {
+  border-bottom: 0.1875rem solid #DB7A4E;
+  padding: 0.625rem 0 0.625rem 0;
+  margin: 0;
+}
 
 .hawaii-underline {
   border-bottom: 0.1875rem solid #DB7A4E;
@@ -106,14 +111,14 @@ body {
 .container__title-box {
   position: relative;
   max-width: 80rem;
-  height: 250px;
+  height: 15.625rem;
 }
 .container__title-box-text {
   position: absolute;
   color: #FFFFFF;
   top: 6.875rem;
   left: 6.25rem;
-  font-size: 65px;
+  font-size: 4.0625rem;
 }
 .card-container {
   max-width: 80rem;
@@ -132,6 +137,9 @@ body {
   max-height: 23.125rem;
   background-color: #FFFFFF;
   margin: 0 1.25rem 0 1.25rem;
+}
+.card:hover {
+  opacity: 0.5;
 }
 .card__title {
   text-align: center;
@@ -210,4 +218,31 @@ body {
 
 .twitter-icon {
   width: 1.5625rem;
+}
+
+/* Contact Form */
+.contact {
+  border-radius: 5px;
+  padding: 9.375rem 6.25rem 5rem 6.25rem;
+}
+.contact__title {
+  color: #335576;
+  margin-bottom: 1.25rem;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 0.0625rem solid #393939;
+  border-radius: 0.3125rem;
+  margin: 1.25rem 0 1.25rem 0;
+}
+
+input[type=submit] {
+  background-color: #DB7A4E;
+  color: #FFFFFF;
+  padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+  border: none;
+  border-radius: 1.25rem;
+  cursor: pointer;
 }/*# sourceMappingURL=destinations.css.map */

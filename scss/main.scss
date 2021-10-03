@@ -54,6 +54,10 @@ body {
             color: $graphite;
             font-weight: 500;
             font-size: 13px;
+
+            &:hover {
+                @include underline(.1875rem solid $orange, .625rem 0 .625rem 0, 0);
+            }
         }
     }
 }
@@ -96,6 +100,10 @@ body {
             padding: .625rem 2.5rem .625rem 2.5rem;
             border: none;
             border-radius: 1.25rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }

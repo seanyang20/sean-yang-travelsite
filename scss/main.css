@@ -55,6 +55,11 @@ body {
   font-weight: 500;
   font-size: 13px;
 }
+.nav-bar__item--decorate:hover {
+  border-bottom: 0.1875rem solid #DB7A4E;
+  padding: 0.625rem 0 0.625rem 0;
+  margin: 0;
+}
 
 .home-underline {
   border-bottom: 0.1875rem solid #DB7A4E;
@@ -94,6 +99,9 @@ body {
   padding: 0.625rem 2.5rem 0.625rem 2.5rem;
   border: none;
   border-radius: 1.25rem;
+}
+.hero-left__link-button:hover {
+  cursor: pointer;
 }
 .hero-right {
   display: flex;

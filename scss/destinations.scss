@@ -52,6 +52,10 @@ body {
             color: $graphite;
             font-weight: 500;
             font-size: 13px;
+
+            &:hover {
+                @include underline(.1875rem solid $orange, .625rem 0 .625rem 0, 0);
+            }
         }
     }
 }
@@ -84,14 +88,14 @@ body {
     &__title-box {
         position: relative;
         max-width: 80rem;
-        height: 250px;
+        height: 15.625rem;
       
         &-text {
             position: absolute;
             color: $white;
             top: 6.875rem;
             left: 6.25rem;
-            font-size: 65px; 
+            font-size: 4.0625rem; 
         }     
     }
     &__title-iceland {
@@ -114,6 +118,10 @@ body {
     max-height: 23.125rem;
     background-color: $white;
     margin: 0 1.25rem 0 1.25rem;
+
+    &:hover {
+        opacity: 0.5;
+    }
 
     &__title {
         text-align: center;
@@ -194,3 +202,38 @@ body {
 .twitter-icon {
     width: 1.5625rem;    
 }
+
+
+/* Contact Form */
+
+  
+.contact {
+    border-radius: 5px;
+    padding: 9.375rem 6.25rem 5rem 6.25rem;
+
+    &__title {
+        color: $blue;
+        margin-bottom: 1.25rem;
+
+    }
+  }
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: .75rem; 
+    border: .0625rem solid $graphite; 
+    border-radius: .3125rem; 
+    margin: 1.25rem 0 1.25rem 0;
+
+  }
+  
+  
+  input[type=submit] {
+    background-color: $orange;
+    color: $white;
+    padding: .625rem 2.5rem .625rem 2.5rem;
+    border: none;
+    border-radius: 1.25rem;
+    cursor: pointer;
+  }
+  
