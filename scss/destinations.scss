@@ -9,15 +9,20 @@
     padding: 0;
     margin: 0;
 }
+html {
+    max-width: 80rem;
+}
 body {
     font: 100% $base-font;
 }
 
+/* Header Section */
 .header {
     background-color: $background-color;
     position: fixed;
     z-index: 1;
     width: 100vw;
+    max-width: 80rem;
     padding: .625rem 0 .625rem 0;
     @include flex(row, space-between, center);
    
@@ -57,7 +62,8 @@ body {
 /* Body Section */
 
 .container {
-   
+    max-width: 80rem;
+    
     &-hawaii {
         @include background-img(url("../assets/Images/hawaii.jpg"));
         max-height: 15.625rem;
@@ -71,14 +77,14 @@ body {
     
     &__title-box {
         position: relative;
-        width: 100vw;
+        max-width: 80rem;
         height: 250px;
       
         &-text {
             position: absolute;
             color: $background-color;
             top: 8.125rem;
-            left: 7.5rem;
+            left: 6.25rem;
             font-size: 70px; 
         }     
     }
@@ -90,7 +96,7 @@ body {
     }
 }
 .card-container {
-    width: 100vw;
+    max-width: 80rem;
     @include flex(row, center, center);
     margin: 1.5625rem 0 0 0;
 }
@@ -113,14 +119,18 @@ body {
         font-size: 1rem;
         }
 
-    &__itinerary {
+    &__list {
+        list-style: none;
         text-align: center;
         margin: .9375rem .9375rem .9375rem .9375rem;
-        padding: .9375rem 0 .9375rem 0;
-        background-color: $footer-background-color;
         font-weight: 300;
         font-size: .9375rem;
     }    
+    &__item {
+        padding: .9375rem 0 .9375rem 0;
+        margin: .9375rem 0 .9375rem 0;
+        background-color: $footer-background-color;
+    }
     
 }
 
@@ -130,6 +140,7 @@ body {
 
 .footer {
     width: 100vw;
+    max-width: 80rem;
     background-color: $footer-background-color;
     @include flex(row, center, center);
     vertical-align: top;   
