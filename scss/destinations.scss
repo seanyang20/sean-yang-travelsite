@@ -1,5 +1,6 @@
 @use './partials/global' as *;
 
+
 *::before, *::after {
   box-sizing: border-box;
   padding: 0;
@@ -10,7 +11,7 @@
     margin: 0;
 }
 html {
-    max-width: 80rem;
+    overflow-x: hidden;
 }
 body {
     font: 100% $base-font;
@@ -23,7 +24,6 @@ body {
     position: fixed;
     z-index: 1;
     width: 100vw;
-    max-width: 80rem;
     padding: .625rem 0 .625rem 0;
     @include flex(row, space-between, center);
    
@@ -72,11 +72,10 @@ body {
 /* Body Section */
 
 .container {
-    max-width: 80rem;
+   
     
     &-hawaii {
         @include background-img(url("../assets/Images/hawaii.jpg"));
-        max-height: 15.625rem;
     }
     &-iceland {
         @include background-img(url("../assets/Images/iceland.jpg"));
@@ -87,7 +86,6 @@ body {
     
     &__title-box {
         position: relative;
-        max-width: 80rem;
         height: 15.625rem;
       
         &-text {
@@ -106,9 +104,15 @@ body {
     }
 }
 .card-container {
-    max-width: 80rem;
+  
     @include flex(row, center, center);
     margin: -0.625rem 0 0 0;
+    flex-wrap: wrap;
+
+    @include tablet {
+        @include flex(row, center, center);
+        margin: -0.625rem 0 0 0;
+    }
 }
 .card {
     border-radius: .3125rem;
@@ -117,7 +121,17 @@ body {
     min-height: 21.875rem;
     max-height: 23.125rem;
     background-color: $white;
-    margin: 0 1.25rem 0 1.25rem;
+    margin: 1.25rem 1.25rem 1.25rem 1.25rem;
+
+    @include tablet {
+        border-radius: .3125rem;
+        min-width: 15.625rem;
+        max-width: 15.625rem;
+        min-height: 21.875rem;
+        max-height: 23.125rem;
+        background-color: $white;
+        margin: 0 1.25rem 0 1.25rem;
+    }
 
     &:hover {
         opacity: 0.5;
@@ -152,10 +166,17 @@ body {
 
 .footer {
     width: 100vw;
-    max-width: 80rem;
     background-color: $beige;
     @include flex(row, center, center);
     vertical-align: top;   
+    flex-wrap: wrap;
+
+    @include tablet {
+        width: 100vw;
+        background-color: $beige;
+        @include flex(row, center, center);
+        vertical-align: top;   
+    }
 }
 .footer-card {
     &__title {

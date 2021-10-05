@@ -10,7 +10,7 @@
     margin: 0;
 }
 html {
-    max-width: 80rem;
+    overflow-x: hidden;
 }
 body {
     font: 100% $base-font;
@@ -24,7 +24,6 @@ body {
     position: fixed;
     z-index: 1;
     width: 100vw;
-    max-width: 80rem;
     padding: .625rem 0 .625rem 0;
     @include flex(row, space-between, center);
    
@@ -70,6 +69,13 @@ body {
     display: flex;
     padding: 3.75rem 0 0 0;
     background-color: $beige;
+    flex-wrap: wrap;
+
+    @include tablet {
+        display: flex;
+        padding: 3.75rem 0 0 0;
+        background-color: $beige;
+    }
 
     &-left {
         width: 50vw;
@@ -129,9 +135,14 @@ body {
 
 }
 .card-container {
-    max-width: 80rem;
     @include flex(row, center, center);
     margin: 0 0 0 0;
+    flex-wrap: wrap;
+
+    @include tablet {
+        @include flex(row, center, center);
+        margin: 0 0 0 0;
+    }
 }
 .card {
     border-radius: .3125rem;
@@ -170,10 +181,17 @@ body {
 
 .footer {
     width: 100vw;
-    max-width: 80rem;
     background-color: $beige;
     @include flex(row, center, center);
     vertical-align: top;   
+    flex-wrap: wrap;
+
+    @include tablet {
+        width: 100vw;
+        background-color: $beige;
+        @include flex(row, center, center);
+        vertical-align: top; 
+    }
 }
 .footer-card {
     &__title {
